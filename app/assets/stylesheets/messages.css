@@ -18,13 +18,13 @@
 
 .user_name a{
   color: #FAFAFA;
-  font-weight: 16px;
+  font-size: 16px;
   text-decoration: none;
 }
 
 .chat_btn a{
   color: deepskyblue;
-  font-weight: 10px;
+  font-size: 10px;
   padding: 14px;
   border: 1px solid lightblue;
   text-decoration: none;
