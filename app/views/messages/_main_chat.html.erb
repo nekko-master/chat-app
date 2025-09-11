@@ -38,14 +38,14 @@
   </div>
 </div>
 
-<div class="type_message">
+<%= form_with model: [@room, @message], html: {class: "type_message"}, local: true do |f| %>
   <div class="message-from">
-    <input type="textarea" placeholder="type a message" class="form-input">
+    <%= f.text_field :content, class: "form-input", placeholder: "type a message" %>
     <label class="form-image">
       <span class="image-file">画像</span>
-      <input type="file" class="hidden">
+      <%= f.file_field :image, class: "hidden" %>
     </label>
   </div>
-  <input type="submit" value="送信" class="form-submit">
+  <%= f.submit "送信", class: "form-submit" %>
   
-</div>
+<% end %>
